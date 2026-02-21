@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -tprojectkspacee1/emailservice:latest ."
+                        sh "docker build -t projectkspacee1/emailservice:latest ."
                     }
                 }
             }
